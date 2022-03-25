@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <Header />
+    <ReserveSection />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import Header from "./components/Header.vue";
+import ReserveSection from "./components/ReserveSection.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Header,
+    ReserveSection
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "./assets/scss/reset.scss";
+@import "./assets/scss/color.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 </style>
