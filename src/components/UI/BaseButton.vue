@@ -1,5 +1,12 @@
 <template>
-  <button :class="{ contained: contained, outline: outline, pill: pill }">
+  <button
+    :class="{
+      contained: contained,
+      outline: outline,
+      pill: pill,
+      inline: inline,
+    }"
+  >
     <slot></slot>
   </button>
 </template>
@@ -10,6 +17,7 @@ export default {
     contained: Boolean,
     outline: Boolean,
     pill: Boolean,
+    inline: Boolean,
   },
 };
 </script>
@@ -18,8 +26,10 @@ button {
   background: transparent;
   color: var(--primary-color);
   transition: all 0.2s ease-in;
-  padding: 0 10px;
-  font-size:16px;
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 16px;
   &:hover {
     background: rgba(0, 0, 0, 0.1);
   }
@@ -27,6 +37,7 @@ button {
 .contained {
   background: var(--primary-color);
   color: var(--paper-color);
+  border: 1px solid var(--primary-color);
   transition: all 0.2s ease-in;
   &:hover {
     background: transparent;
@@ -46,5 +57,10 @@ button {
 }
 .pill {
   border-radius: 30px;
+}
+.inline {
+  width: unset;
+  height: unset;
+  padding: 0;
 }
 </style>
