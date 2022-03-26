@@ -66,6 +66,9 @@ export default {
 }
 .reserving {
   margin-top: 32px;
-  padding: 0 10%;
+  text-align:center;
+  button{
+      width:300px;
+  }
 }
 </style>

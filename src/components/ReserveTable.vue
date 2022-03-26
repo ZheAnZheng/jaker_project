@@ -218,6 +218,7 @@ $path: 58px;
     line-height: $diameter - 4px;
     background-color: var(--primary-color);
     color: var(--paper-color);
+    cursor:pointer;
   }
   &::before {
     content: "無";

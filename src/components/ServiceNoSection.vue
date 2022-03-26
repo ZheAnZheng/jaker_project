@@ -112,7 +112,7 @@ export default {
     flex-flow: wrap;
     justify-content: space-around;
     .box {
-      flex: 0 0 40%;
+      flex: 0 0 30%;
       min-width: 300px;
     }
 
@@ -122,5 +122,11 @@ export default {
       white-space: pre-wrap;
     }
   }
+}
+@media screen and (min-width:600px){
+      .noservice-title :nth-child(1){
+          font-size:32px!important;
+
+      }
 }
 </style>

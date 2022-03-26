@@ -4,6 +4,7 @@
     <ReserveSection />
     <ServiceSection />
     <ServiceNoSection />
+    <JakerRecommend />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Header from "./components/Header.vue";
 import ReserveSection from "./components/ReserveSection.vue";
 import ServiceSection from "./components/ServiceSection.vue";
 import ServiceNoSection from "./components/ServiceNoSection.vue";
+import JakerRecommend from "./components/JakerRecommend.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     ReserveSection,
     ServiceSection,
     ServiceNoSection,
+    JakerRecommend,
   },
 };
 </script>
