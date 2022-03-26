@@ -2,7 +2,7 @@
   <div class="table-container">
     <ul class="tabs">
       <li class="active">快速預約</li>
-      <li>雙人快清</li>
+      <li class="new">雙人快清</li>
       <li>指定人員</li>
       <li>定期享優惠</li>
     </ul>
@@ -15,13 +15,13 @@
       </div>
       <div class="select">
         <ClockIcon />
-        <select name="state">
+        <select name="time">
           <option>3小時</option>
         </select>
       </div>
       <div class="has-doggy">
         <PetIcon />
-        <p>家中有寵物</p>
+        <p>家中有寵物?</p>
         <div class="switch">
           <div class="ball" @click="runAnimation">無</div>
         </div>
@@ -107,6 +107,22 @@ export default {
     display: flex;
     column-gap: 2px;
   }
+  .new {
+    position: relative;
+    &:after {
+      content: "NEW";
+      position: absolute;
+      width: 31px;
+      height: 12px;
+      border-radius: 12px;
+      top: 0;
+      right: 2px;
+      font-size:10px;
+      transform: translateY(-50%);
+      color: var(--paper-color);
+      background-color: var(--important-color);
+    }
+  }
   li {
     flex: 1;
     padding: 8px 4px;
@@ -164,6 +180,10 @@ select {
   padding: 10px 20%;
   border: unset;
   border-radius: 3px;
+  color:var(--text-color);
+  option{
+    color:var(--text-color);
+  }
 }
 .has-doggy {
   display: flex;

@@ -67,12 +67,12 @@ export default {
     height: 525px;
     width: 100%;
     padding: 20px;
-    // background: no-repeat top/cover url("../assets/landing_mobilebg.png");
   }
 }
 .title {
   margin-top: 60px;
   font-size: 36px;
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 600px) {

@@ -2,17 +2,24 @@
   <div>
     <Header />
     <ReserveSection />
+    <ServiceSection />
+    <ServiceNoSection />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import ReserveSection from "./components/ReserveSection.vue";
+import ServiceSection from "./components/ServiceSection.vue";
+import ServiceNoSection from "./components/ServiceNoSection.vue";
+
 export default {
   name: "App",
   components: {
     Header,
     ReserveSection,
+    ServiceSection,
+    ServiceNoSection,
   },
 };
 </script>
