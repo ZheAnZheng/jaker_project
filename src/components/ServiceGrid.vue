@@ -413,7 +413,7 @@ export default {
     width: 90%;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 5fr 1fr 6fr;
+    grid-auto-rows: 6fr 1fr 8fr;
     grid-template-areas:
       "living kitchen balcony"
       "living kitchen other"

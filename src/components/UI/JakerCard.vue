@@ -5,8 +5,8 @@
     <div class="name">{{ jaker.name }}</div>
     <div class="rating">
       <p>{{ jaker.rating }}</p>
-      <StarIcon v-for="i in starCount" :key="i"/>
-      <HalfStaricon v-show="isHalfStar"/>
+      <StarIcon v-for="i in starCount" :key="i" />
+      <HalfStaricon v-show="isHalfStar" />
     </div>
     <div class="value">${{ jaker.value }}/hr</div>
   </div>
@@ -31,8 +31,8 @@ export default {
     const isHasHalfStar = (rating % 1) * 10 > 4;
 
     return {
-        starCount:fullStarCount,
-        isHalfStar:isHasHalfStar
+      starCount: fullStarCount,
+      isHalfStar: isHasHalfStar,
     };
   },
 };

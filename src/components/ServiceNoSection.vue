@@ -123,10 +123,9 @@ export default {
     }
   }
 }
-@media screen and (min-width:600px){
-      .noservice-title :nth-child(1){
-          font-size:32px!important;
-
-      }
+@media screen and (min-width: 600px) {
+  .noservice-title :nth-child(1) {
+    font-size: 32px !important;
+  }
 }
 </style>

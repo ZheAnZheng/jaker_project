@@ -5,7 +5,11 @@
       <p>挑人員，評價直接看！</p>
     </div>
     <div class="box jaker">
-      <JakerCard v-for="jaker in recommendJakers" :key="jaker.id"  :jaker="jaker"/>
+      <JakerCard
+        v-for="jaker in recommendJakers"
+        :key="jaker.id"
+        :jaker="jaker"
+      />
     </div>
     <div class="box image">
       <div class="image-group">
@@ -111,23 +115,20 @@ export default {
   display: gird;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr;
-  background-color:var(--lightgrey-bg-color);
+  background-color: var(--lightgrey-bg-color);
 }
 
 .box {
   width: 100%;
   height: 100%;
-
+  padding-top: 16px;
   &:nth-of-type(1) {
-   
     grid-area: title;
   }
   &:nth-of-type(2) {
-   
     grid-area: jaker;
   }
   &:nth-of-type(3) {
-    
     grid-area: image;
   }
 }

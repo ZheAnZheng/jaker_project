@@ -33,10 +33,11 @@
   </svg>
 </template>
 
-
-// <style lang="scss" scoped>
+//
+<style lang="scss" scoped>
 // .star-icon{
 //     height:15px;
 //     width:15px;
 // }
-// </style>
+//
+</style>
